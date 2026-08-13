@@ -1,0 +1,259 @@
+[00:00–00:03] Selama ini kembali dengan Pak Hasung Sikhan.
+[00:03–00:05] Hasung Sikhan saja.
+[00:05–00:07] Jadi itu bermasalah.
+[00:07–00:11] Jadi kita libutin dulu masalahnya benar nggak?
+[00:11–00:13] Oke, oke.
+[00:13–00:18] Kalau benar kalau ada UMK yang bermasalah,
+[00:18–00:22] biasanya mereka pemacahan masalahnya pakai apa?
+[00:22–00:23] Selama ini gitu.
+[00:23–00:25] Oh, saya juga bikin ini aja.
+[00:25–00:27] Nah, itunya loh.
+[00:27–00:31] Jadi selama sebelum ada AI chatbot ini kan mereka juga pasir sudah mulai.
+[00:31–00:33] Ada beberapa solusi.
+[00:33–00:36] Nah, itunya telong di atas.
+[00:36–00:37] Baik.
+[00:37–00:41] Jadi selama ini mereka pakai ini.
+[00:41–00:45] Oleh karena itu maka dia membuat AI chatbot
+[00:45–00:48] untuk membantu mereka mempermudah.
+[00:48–00:51] Jadi kita tahu loh, lebih paham lagi.
+[00:51–00:55] Ini UMK-M yang mana yang bisa memakai chatbot ini.
+[00:55–00:58] Yang kan UMK-M jualan
+[00:58–01:02] tukang rotan umur 50 tahun ke atas kayaknya
+[01:02–01:04] kurang pas ya untuk ini.
+[01:04–01:07] Jadi kita tahu siapa yang mau kita
+[01:07–01:08] kita cari.
+[01:08–01:09] Targetkan, ya.
+[01:09–01:11] Targetkan, gitu.
+[01:11–01:12] Oke.
+[01:12–01:13] Kebayang nggak?
+[01:13–01:14] Kebayang.
+[01:14–01:15] Berarti.
+[01:15–01:16] Oke.
+[01:17–01:22] Berarti sebelum ada AI chatbotnya pun
+[01:22–01:24] sudah turun ke UMK-M.
+[01:24–01:25] Oh, sorry.
+[01:25–01:27] Masa gimana-dimana?
+[01:27–01:30] Oh, aku dari Kuningan.
+[01:30–01:32] Dari Kuningan, oke.
+[01:32–01:36] Di Kuningan, cari beberapa UMK-M
+[01:36–01:38] dari berbagai industri ini.
+[01:38–01:39] Ya.
+[01:39–01:43] NB, ML, mekanan minuman, pesen.
+[01:43–01:45] Ya, berbeda-beda gitu ya.
+[01:45–01:47] Baru wisata, apapun ya.
+[01:47–01:48] Ya.
+[01:48–01:49] Berbeda-beda.
+[01:49–01:52] Terus, dan segmennya juga berbeda-beda.
+[01:52–01:54] Demografi itu, ya.
+[01:54–01:55] Pusia.
+[01:55–01:56] Pusia ini.
+[01:56–01:57] Mamin.
+[01:57–01:59] Jadi kelihatan mana yang udah.
+[01:59–02:03] Udah memilah.
+[02:03–02:05] Ada yang belum.
+[02:05–02:07] Kita tergetkan yang belum.
+[02:07–02:10] Dan itu bisa nggak?
+[02:10–02:12] Kalau misalnya chat, gitu.
+[02:12–02:15] Chatnya juga kita, kurang-kurangnya,
+[02:15–02:18] kita sop simulasikan aja dulu bantima.
+[02:18–02:22] Sebelum ada chat buat, kan bisa chat pribadi ya.
+[02:22–02:24] Bisa chat kayak ngobrol sama orang.
+[02:24–02:25] Ya.
+[02:25–02:28] Kurang-kurangnya buat, itu prototipnya.
+[02:28–02:30] Prototipnya adalah yang kurang-kurangnya buat.
+[02:30–02:31] Kurang-kurang.
+[02:31–02:32] Apa aja nih?
+[02:32–02:33] Pro.
+[02:33–02:35] So, wala-wala itu chat buat kita.
+[02:35–02:36] Ya.
+[02:36–02:38] Pertal tapi orang, gitu.
+[02:38–02:39] Belakangnya, gitu.
+[02:39–02:41] Itu kan konsolusinya, gitu.
+[02:41–02:44] Jadi apa yang ditawarkan terbahasa-bahasanya.
+[02:44–02:45] Seperti apa.
+[02:45–02:47] Kalau anak-anak mudah kan masanya
+[02:47–02:50] mungkin yang lebih santai, lebih informal.
+[02:50–02:53] Dan kalau MkH yang lebih tua, lebih formal.
+[02:53–02:55] Seperti itu, ya.
+[02:55–02:56] Rasanya belum dapet.
+[02:56–02:58] Itu kan dari depan aja, ya.
+[02:58–02:59] Ya.
+[02:59–03:00] Interaksi.
+[03:00–03:02] Tapi belum dapet di belakangnya nih.
+[03:02–03:05] Nanti juga tolong dijelaskan.
+[03:05–03:09] Di belakangnya tuh databasenya berupa apa.
+[03:09–03:11] Karena kan basisnya di depannya chat.
+[03:11–03:13] Ya, chatting.
+[03:13–03:14] Chatting.
+[03:14–03:19] Apa yang diserat masuk ke dalam database karena
+[03:19–03:22] kan bersifat-bersifat pribadi ya, chat, gitu.
+[03:22–03:23] Ya.
+[03:23–03:25] Dan database apa yang bisa diambil.
+[03:25–03:26] Seperti itu.
+[03:26–03:29] Jadi apa yang cuma diodat
+[03:29–03:33] sama penghasilan perbulannya aja, gitu.
+[03:33–03:34] Seperti itu nyalah.
+[03:34–03:35] Ya, ya.
+[03:36–03:37] Gitu ya.
+[03:37–03:40] Jadi sehingga terdata jelas
+[03:40–03:43] apa-apa aja solusinya selalu
+[03:43–03:47] bayar atau nggak mereka MkH-nya
+[03:47–03:49] untuk solusi yang berfaltimat?
+[03:49–03:50] Nah.
+[03:51–03:54] Belum terfikirkan apakah nanti akan
+[03:54–03:56] awalnya gratis dulu,
+[03:56–04:00] baru nanti setelah ini berbayar
+[04:00–04:04] atau mungkin di gratiskan saja gitu
+[04:04–04:05] buat MkH-nya.
+[04:05–04:07] Oke, di gratiskan.
+[04:07–04:10] Jadi ini kan pake engine
+[04:10–04:11] OpenEI?
+[04:11–04:12] Iya.
+[04:12–04:15] Karena ini OpenEI-nya siapa yang bayar?
+[04:15–04:17] Ini atau yang gratiskan?
+[04:17–04:18] Yang basic aja.
+[04:18–04:19] Yang basic?
+[04:20–04:21] Kalau yang basic.
+[04:21–04:23] Oke, yang basic itu terbatas nggak sih?
+[04:24–04:25] Iya sih.
+[04:25–04:26] Terbatas.
+[04:26–04:28] Karena biasanya kita bayar
+[04:28–04:30] langgananya
+[04:30–04:32] si MkH-nya apakah
+[04:32–04:34] gratis apa-apa?
+[04:34–04:35] Di gratis ini nggak apa-apa.
+[04:35–04:36] Nanti yang bayarin
+[04:36–04:39] langganan kita, misalnya kita minta sponsor
+[04:39–04:41] bahan Indonesia, misalnya.
+[04:42–04:44] Ini hanya tolong kayak gitu.
+[04:44–04:47] Jadi sponsorin selama 3 bulan.
+[04:47–04:50] Tapi dalam 3 bulan harus dapet
+[04:50–04:53] berapa ratus bulan baik, misalnya.
+[04:53–04:57] Yang menginstall chatnya ini.
+[04:58–05:01] Mungkin dari 150 yang sudah bisa
+[05:01–05:03] berhasil memilah.
+[05:03–05:05] Jadi harus ada target-nya kan kita?
+[05:05–05:06] Iya.
+[05:06–05:08] Kalau nggak, kita nggak bisa
+[05:08–05:11] mengukur impact.
+[05:11–05:14] Impact dari solution, AI-solution-nya.
+[05:14–05:16] Sedangkan ini,
+[05:16–05:17] impact pernah.
+[05:17–05:18] Iya, betul.
+[05:18–05:19] Gitu.
+[05:19–05:21] Jadi hal-hal itunya yang perlu diberatikan.
+[05:21–05:22] Oke.
+[05:22–05:24] Hal-hal yang harus diberatikan.
+[05:25–05:27] Kira-kira sih sarantai ya, gitu sih.
+[05:27–05:30] Jadi PR-nya ke lapangnya sekarang
+[05:30–05:33] Surveian.
+[05:33–05:35] Siapa yang mudah, siapa yang belum,
+[05:35–05:36] siapa yang lebih butuh.
+[05:36–05:37] Jadi kita tahu
+[05:37–05:39] mana mau proses
+[05:39–05:41] ke yang mana.
+[05:42–05:44] Baru lah kekadaan testing-nya.
+[05:44–05:45] Baik.
+[05:45–05:47] Berarti nanti
+[05:47–05:49] di beda-beda ini ya
+[05:49–05:51] ada yang kemakanan,
+[05:51–05:52] ada yang ke, misalnya,
+[05:52–05:54] passion gitu.
+[05:54–05:55] Gitu.
+[05:55–05:57] Sama usia.
+[05:57–05:59] Usia juga beda-beda.
+[05:59–06:00] Gitu.
+[06:00–06:01] Usia, kalamin,
+[06:01–06:03] atau apapun lah.
+[06:03–06:04] Nanti
+[06:04–06:06] di penjurian itu
+[06:06–06:07] pengennya sih udah.
+[06:07–06:08] Saya udah mensurvey,
+[06:08–06:10] dan saya udah uji coba.
+[06:10–06:12] Uji coba PR-nya.
+[06:12–06:15] Saya keselian orang.
+[06:15–06:17] Terus
+[06:17–06:19] sudah terlihat kalau
+[06:19–06:21] mereka-
+[06:21–06:23] mereka-nya sudah mulai bisa
+[06:23–06:25] memilah, gitu.
+[06:25–06:28] Berarti di-pastikan dulu
+[06:28–06:30] maka
+[06:30–06:32] permasalahannya ini benar atau
+[06:32–06:33] enggak-nya gitu ya?
+[06:33–06:35] Iya, karena ini masih asumsi.
+[06:35–06:37] Kali dasi dulu masalahnya.
+[06:37–06:38] Oke, baik.
+[06:38–06:40] Gitu.
+[06:40–06:41] 4 hari.
+[06:41–06:43] Punya 4 hari dibuat ingin bisa
+[06:43–06:44] keliling-keliling.
+[06:44–06:45] Bisa.
+[06:45–06:46] Oke.
+[06:46–06:47] Siap.
+[06:47–06:48] Jadi gitu ya.
+[06:48–06:50] Saya kumpulkan data-nya.
+[06:50–06:53] Nah, namanya juga Masiswa.
+[06:53–06:54] Iya.
+[06:54–06:56] Karena ada peneliti.
+[06:56–06:58] Ini yang benar-benar penelitian ini.
+[06:58–07:00] Iya, betul.
+[07:00–07:02] Oke.
+[07:02–07:04] Gitu sih, dari saya saran saya itu.
+[07:04–07:06] Jadi ketika penjurian hari satu,
+[07:06–07:08] udah ada tuh.
+[07:08–07:09] Dataknya ya.
+[07:09–07:11] Jadi nilai tinggi.
+[07:11–07:13] Kalau cuman kaya-nya aja
+[07:13–07:16] atau saya sih mau-nya seperti ini.
+[07:16–07:18] Semoga bisa, gitu kan.
+[07:18–07:20] Masih pancana ya.
+[07:20–07:21] Sedangkan kalau ya,
+[07:21–07:22] Mas Fatima udah.
+[07:22–07:24] Mungkin saya udah kelapakan.
+[07:24–07:25] Nilai penelit.
+[07:25–07:28] Masalahnya ini ternyata yang lebih betul adalah
+[07:28–07:30] ibu-ibu rumah tangga
+[07:30–07:33] yang memang banyak pemeluaran
+[07:33–07:34] saya gitu.
+[07:34–07:36] Ini mah
+[07:36–07:38] asumsi saya ya.
+[07:38–07:39] Iya.
+[07:39–07:40] Gitu.
+[07:40–07:41] Ternyata itu yang betul.
+[07:41–07:42] Jadi kan saya
+[07:42–07:44] tak fokus kepada
+[07:44–07:46] wiman gitu.
+[07:46–07:48] Wiman yang terpengar
+[07:48–07:50] yang banyaknya di
+[07:50–07:53] makanan gitu.
+[07:53–07:55] Nanti tiga bulan.
+[07:55–07:56] Pertama di saya fokus di situ.
+[07:56–07:58] Mungkin tiga bulan kepulanya
+[07:58–08:00] udah ke industri lain.
+[08:00–08:02] Yang kaya gitu-gitunya perlu di
+[08:02–08:04] mencanakan juga.
+[08:04–08:06] Jadi sudah ada bukti.
+[08:06–08:08] Lalu udah ada rencana
+[08:08–08:09] pengembangan.
+[08:09–08:11] Nah itu nilai tinggi.
+[08:11–08:12] Gitu.
+[08:12–08:14] Kalau mungkin sebenernya
+[08:14–08:16] jadi tak ketingin.
+[08:16–08:18] Gitu.
+[08:18–08:20] Tapi perlu ada buktinya.
+[08:20–08:22] Kalau memang mereka perlu
+[08:22–08:24] dan penerimaan.
+[08:24–08:26] Kalau sih itu.
+[08:26–08:27] Pak Indonesia juga.
+[08:27–08:28] Pakinya kan
+[08:28–08:30] pak aplikasi ini ke
+[08:30–08:32] 1M Bina Mereka.
+[08:32–08:33] Nantinya.
+[08:33–08:34] Kalau memang berhasil.
+[08:34–08:35] Benda katanya ini.
+[08:35–08:36] Gitu.
+[08:36–08:37] Gitu.
+[08:37–08:38] Oke.
+[08:38–08:39] Siap sih.
+[08:39–08:40] Dari sana gitu.

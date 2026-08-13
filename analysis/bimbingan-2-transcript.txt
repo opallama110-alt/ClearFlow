@@ -1,0 +1,130 @@
+[00:00–00:12] Secara nilai, secara ide bagus, secara implementasi sangat mungkin untuk diterapkan,
+[00:12–00:24] secara inovasi juga ada, dan proposalnya juga sangat simpel dan elegan,
+[00:24–00:27] sesuai dengan yang di diskursikan waktu bootcamp.
+[00:28–00:37] Jadi memang untuk ide Fatima ini, nanti kan di final akan ada presentasi lagi,
+[00:37–00:45] dan kemudian penilaiannya itu berbeda dari waktu penyesihkan.
+[00:45–00:51] Di final itu nanti penilaiannya adalah 60 persen itu berkaitan dengan AI-nya.
+[00:51–00:55] Terus yang kedua, 40 persen itu berkaitan dengan bisnisnya.
+[00:55–01:00] Nah, jadi kalau dari saya, Pak, sebenarnya buat saya,
+[01:00–01:03] ide Pak Fatima sudah bagus, sudah oke.
+[01:03–01:10] Cuma yang perlu diperbaiki sebenarnya lebih kepada tim saya.
+[01:10–01:16] Sebenarnya ada tim yang lain, yang juga punya ide sejenis,
+[01:16–01:20] tapi dia sangat rumit memakainya pertama,
+[01:20–01:24] terus kemudian selain dia sangat rumit itu, dia juga masih berupa mocap.
+[01:24–01:28] Jadi bukan lupa sebuah aplikasi yang memang bisa langsung dicoba.
+[01:28–01:33] Kalau Pak Fatima, saya lihat kan sudah berjalan, sudah jadi sebuah web app.
+[01:33–01:40] Nah kalau sayangan Pak itu, jatuhnya dia berupa hanya mocap yang benar-benar
+[01:40–01:44] masih cukup manual, jadi Pak punya kelebihan di situ.
+[01:44–01:50] Nah, tantangan terbesarnya adalah gimana Pak bisa mendalikan ide,
+[01:50–01:54] dalam 45 menit. Tapi sebenarnya kalau saya lihat dari provosal
+[01:54–01:57] dan juga dari apa yang Pak sampaikan seharusnya,
+[01:57–02:06] Pak tidak punya masalah untuk mempersentaskan ide Pak di judul 5 menit,
+[02:06–02:09] karena memang sudah simpel banget.
+[02:09–02:12] Dan juga tapi tepat penasaran.
+[02:12–02:17] Nah, karena penelayan yang paling besar itu adalah dari poin bisnis sama EI.
+[02:17–02:22] EI-nya 60% dan bisnis 40%. Mungkin saran dari saya,
+[02:22–02:28] mungkin Pak nanti masukkan bagaimana proses transasi
+[02:28–02:32] atau proses translate dari cerita yang dimasukkan,
+[02:32–02:36] menjadi sebuah kumpulan data transaksi yang akan ditutupkan.
+[02:36–02:40] Kan itu kan kalau di EI kan soalnya di dalam penilaian EI-nya
+[02:40–02:46] ada penilaian penggunaan teknik yang tepat untuk penyelesaian masalah.
+[02:46–02:50] Nah, sebenarnya kan ini kan Pak menggunakan,
+[02:50–02:57] apa bisa dibilang data cerita transaksi itu di lempar ke gemini.
+[02:57–02:59] Nah gemini yang melakukan translasi.
+[02:59–03:06] Nah, tapi kalau misalnya Pak bisa mengetahui cara saja gimana?
+[03:06–03:12] Caranya gemini itu bisa mengubah cerita itu jadi list kumpulan transaksi.
+[03:12–03:17] Gak harus detail cukup misalnya menggunakan teknik blablabla gitu.
+[03:17–03:22] Nah itu udah cukup karena itu ada poin yang menentukan
+[03:22–03:25] kesesuaian teknik EI dengan masalah yang dipecahkannya.
+[03:25–03:30] Jadi kalau dari saya sih sebenarnya secara ide gak ada masalah,
+[03:30–03:33] secara inovasi gak ada masalah,
+[03:33–03:35] secara eksekusi juga gak ada masalah.
+[03:35–03:40] Cuma untuk melangkapi mungkin Pak bisa perkuat di bagian EI-nya.
+[03:40–03:44] Terus yang kedua, Pak juga harus menghantikan ini,
+[03:44–03:46] sebolepon saya bukan mentor bisnis,
+[03:46–03:48] cuma saya jadi kepikiran aja sih.
+[03:48–03:54] Karena ambil dekat gemini otomatis akan ada cost di belakang layar.
+[03:54–04:00] Jelap artian bagaimana Pak memastikan nanti Pak akan menjual produk ini.
+[04:00–04:04] Karena nanti di situ ada orang beginya, orang beginya.
+[04:04–04:08] Itu sama bikin sekali memekan dan main-main yang ada di jirupon.
+[04:08–04:14] Sehingga nanti bisa saja ide jadi danai atau di beli dan sebagainya
+[04:14–04:16] atau apapun mereka di sebagainya.
+[04:16–04:19] Nah, cuma Pak harus memikirkan karena ini pakai gemini
+[04:19–04:22] mungkin kalau sampai berapa transaksi itu masih gratis tuh.
+[04:22–04:25] Tapi nanti setelah berapa transaksi mungkin sudah berbayar ke gemini
+[04:25–04:29] karena pastikan antara harga langganan
+[04:29–04:34] dengan harga langganan gemini EPI-nya
+[04:34–04:37] dengan harga langganan
+[04:37–04:42] dari UMKM atau dari pengguna aplikasi bah itu
+[04:42–04:44] jatuhnya Pak untung bukan rugi.
+[04:44–04:48] Ya mungkin dari saya dua itu saja simpah masukkannya.
+[04:48–04:52] Temukan teknik yang tadi karena itu masuk point penilaian
+[04:52–04:54] yang kedua adalah pastikan bahwa
+[04:54–04:58] karena ini menggunakan gemini EPI pastikan ini tidak rugi.
+[04:58–05:01] Mungkin dari saya begitu mungkin Pak ada yang mau ditanyakan
+[05:01–05:02] atas di diskusi kan.
+[05:03–05:07] Baik Pak, terima kasih atas masukkannya.
+[05:07–05:12] Kalau dari saya pribadi sudah tidak ada pertanyaan lagi.
+[05:12–05:17] Cuma waktu ada satu sih kan waktu kemarin,
+[05:17–05:21] waktu yang lagi di demo kan itu dia masih simpel ya.
+[05:21–05:24] Maksudnya masih yang tidak perlu login atau gimana.
+[05:24–05:29] Tapi kalau yang tidak perlu login itu nanti takutnya bakal hilang gitu.
+[05:30–05:35] Misalnya sudah masukkan pencetatan keuangannya
+[05:35–05:38] dari uang pribadi sama uang usahanya.
+[05:38–05:42] Terus nanti kalau misalkan dia tidak pakai akun loginnya
+[05:42–05:45] kan nanti takutnya langsung hilang gitu ke hapus
+[05:45–05:47] karena kan tidak kesimpen.
+[05:47–05:52] Jadi kemarin nambahin diperbaharui itu kemarin baru kemarin
+[05:52–05:56] diperbaharui jadi waktu nanti waktu sudah masuk
+[05:56–05:58] itu pertama loginnya pakai akun Google.
+[05:58–06:01] Kalau seperti itu masih aman atau tidak Pak?
+[06:12–06:15] Jadi waktu lagi pencet linknya itu
+[06:15–06:21] jadi kita seperti login dulu pakai email kita pakai akun Google.
+[06:21–06:25] Pakai akun Google kita kan sebelumnya kan enggak kan.
+[06:25–06:28] Nah kalau begitu tuh dihawatirkan takutnya nantinya
+[06:28–06:32] tuh si riwayat yang sudah kita catat keuangannya
+[06:32–06:34] nanti takutnya hilang gitu.
+[06:34–06:38] Nah aku tuh kemarin baru memperbaharui nih kemarin masukin
+[06:38–06:41] jadi waktu masuk linknya kita harus masuk pakai
+[06:41–06:43] akun Google dulu kalau seperti itu aman-aman aja
+[06:43–06:45] apa malah tambah ribet ya.
+[06:50–06:54] Sebenernya memang kalau kita bicara bisnis
+[06:54–06:58] ya Pak ini kan impact praner-pranernya ada bisnisnya
+[06:58–07:01] sebenernya semakin banyak orang yang menjadi user
+[07:01–07:02] itu semakin baik.
+[07:02–07:06] Jadi sebenernya mekanisme login dan sebagainya
+[07:06–07:09] itu justru di situ lah poin yang bisa
+[07:09–07:11] menjadikan idem Pak itu menjadi sebuah bisnis.
+[07:11–07:13] Jadi sebenernya malah dengan Pak
+[07:13–07:17] menyediakan login with Google dan sebagainya
+[07:17–07:19] itu malah sebenarnya gak apa-apa kan.
+[07:19–07:22] Bukan hambatan malah itu menjadi sesuatu yang
+[07:22–07:26] bisa menjadi calon cash flow misalnya nanti
+[07:26–07:29] di jual dan ada langganan dan sebagainya.
+[07:29–07:31] Jadi gak ada masalah sih Pak.
+[07:31–07:33] Menurut saya malah itu bagus.
+[07:33–07:35] Baik Pak, terima kasih.
+[07:35–07:37] Mungkin itu aja sih dari saya.
+[07:37–07:40] Oke ya jadi mungkin kalau gitu itu aja
+[07:40–07:43] baik nanti di final silahkan
+[07:43–07:45] prosentasi dengan terbaik Pak.
+[07:45–07:48] Saya harap karena Pak kan tahu nih
+[07:48–07:51] posisinya ada di top 3 itu jadi jadi
+[07:51–07:54] motivasi bukan malah menjadi membuat hantai.
+[07:54–07:57] Jadi silahkan berikan yang terbaik lagi nanti
+[07:57–07:58] di finalnya.
+[07:58–08:01] Jadi sudah bagus sebenernya tidak ada
+[08:01–08:04] apa hal-hal lain lagi yang bisa membuat
+[08:04–08:07] nanti malah jatuh itu justru adalah
+[08:07–08:09] mungkin kalau misalnya takutnya terlalu
+[08:09–08:10] perpuas dan sebagainya.
+[08:10–08:12] Jadi silahkan diperkuat lagi yang bisa
+[08:12–08:13] bisa diperkuat.
+[08:13–08:16] Selamat sekali lagi sudah ada di tahap ini.
+[08:16–08:18] Terima kasih.
+[08:18–08:19] Ya.
+[08:19–08:21] Waalaikumsalamualaikum warahmatullahi wabarakatuh.
+[08:21–08:22] Terima kasih Bapak.
+[08:22–08:23] Terima kasih.
+[08:24–08:25] Izin live ya.
+[08:25–08:26] Ya baik.

@@ -1,0 +1,26 @@
+{
+  "conditions": [],
+  "parameters": {
+    "ai_enabled": {
+      "defaultValue": { "value": "true" },
+      "description": "Master switch ekstraksi transaksi dengan Firebase AI Logic.",
+      "valueType": "BOOLEAN"
+    },
+    "ai_model": {
+      "defaultValue": { "value": "gemini-3.5-flash-lite" },
+      "description": "Model stabil dan hemat kuota untuk ekstraksi transaksi pilot.",
+      "valueType": "STRING"
+    },
+    "max_transactions_per_input": {
+      "defaultValue": { "value": "8" },
+      "description": "Batas jumlah draft dari satu cerita transaksi.",
+      "valueType": "NUMBER"
+    },
+    "pilot_mode": {
+      "defaultValue": { "value": "true" },
+      "description": "Menandai aplikasi masih berada dalam pilot 30 hari.",
+      "valueType": "BOOLEAN"
+    }
+  },
+  "parameterGroups": {}
+}

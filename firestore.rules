@@ -1,0 +1,124 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(businessId) {
+      return signedIn() && request.auth.uid == businessId;
+    }
+
+    function validShortString(value, minimum, maximum) {
+      return value is string && value.size() >= minimum && value.size() <= maximum;
+    }
+
+    function validMoney(value) {
+      return value is int && value >= 0 && value <= 100000000000;
+    }
+
+    function validBusiness(businessId) {
+      return request.resource.data.keys().hasAll([
+          'ownerId', 'ownerName', 'name', 'businessType', 'city',
+          'timezone', 'currency', 'bookkeepingStartDate',
+          'openingBusinessBalance', 'openingPersonalBalance',
+          'onboardingCompleted', 'aiProcessingConsent', 'plan',
+          'schemaVersion', 'createdAt', 'updatedAt'
+        ])
+        && request.resource.data.keys().hasOnly([
+          'ownerId', 'ownerName', 'name', 'businessType', 'city',
+          'timezone', 'currency', 'bookkeepingStartDate',
+          'openingBusinessBalance', 'openingPersonalBalance',
+          'onboardingCompleted', 'aiProcessingConsent', 'plan',
+          'productTourVersion', 'schemaVersion', 'createdAt', 'updatedAt'
+        ])
+        && request.resource.data.ownerId == businessId
+        && validShortString(request.resource.data.ownerName, 2, 60)
+        && validShortString(request.resource.data.name, 2, 80)
+        && request.resource.data.businessType in [
+          'Kuliner', 'Perdagangan', 'Jasa', 'Produksi',
+          'Pertanian', 'Kreatif', 'Lainnya'
+        ]
+        && validShortString(request.resource.data.city, 2, 80)
+        && request.resource.data.timezone == 'Asia/Jakarta'
+        && request.resource.data.currency == 'IDR'
+        && request.resource.data.bookkeepingStartDate is string
+        && request.resource.data.bookkeepingStartDate.matches('^\\d{4}-\\d{2}-\\d{2}$')
+        && validMoney(request.resource.data.openingBusinessBalance)
+        && validMoney(request.resource.data.openingPersonalBalance)
+        && request.resource.data.onboardingCompleted is bool
+        && request.resource.data.aiProcessingConsent is bool
+        && (!request.resource.data.keys().hasAny(['productTourVersion'])
+          || (request.resource.data.productTourVersion is int
+            && request.resource.data.productTourVersion >= 0
+            && request.resource.data.productTourVersion <= 1))
+        && request.resource.data.plan == 'pilot'
+        && request.resource.data.schemaVersion == 2
+        && request.resource.data.createdAt is timestamp
+        && request.resource.data.updatedAt is timestamp;
+    }
+
+    function validTransaction() {
+      return request.resource.data.keys().hasAll([
+          'date', 'description', 'amount', 'flow', 'fund', 'category',
+          'status', 'source', 'confidence', 'schemaVersion',
+          'createdAt', 'updatedAt'
+        ])
+        && request.resource.data.keys().hasOnly([
+          'date', 'description', 'amount', 'flow', 'fund', 'category',
+          'status', 'source', 'confidence', 'model', 'schemaVersion',
+          'createdAt', 'updatedAt'
+        ])
+        && request.resource.data.date is string
+        && request.resource.data.date.matches('^\\d{4}-\\d{2}-\\d{2}$')
+        && validShortString(request.resource.data.description, 1, 160)
+        && request.resource.data.amount is int
+        && request.resource.data.amount > 0
+        && request.resource.data.amount <= 100000000000
+        && request.resource.data.flow in ['income', 'expense']
+        && request.resource.data.fund in ['business', 'personal']
+        && request.resource.data.category in [
+          'Penjualan', 'Bahan Baku', 'Operasional', 'Gaji',
+          'Transportasi', 'Pribadi', 'Modal', 'Lainnya'
+        ]
+        && request.resource.data.status in ['confirmed', 'needs-review']
+        && request.resource.data.source in ['Gemini', 'Parser', 'Manual', 'AI']
+        && request.resource.data.confidence is number
+        && request.resource.data.confidence >= 0
+        && request.resource.data.confidence <= 1
+        && (!request.resource.data.keys().hasAny(['model'])
+          || validShortString(request.resource.data.model, 1, 60))
+        && request.resource.data.schemaVersion == 2
+        && request.resource.data.createdAt is timestamp
+        && request.resource.data.updatedAt is timestamp;
+    }
+
+    match /businesses/{businessId} {
+      allow read: if isOwner(businessId);
+      allow create: if isOwner(businessId) && validBusiness(businessId);
+      allow update: if isOwner(businessId)
+        && validBusiness(businessId)
+        && request.resource.data.ownerId == resource.data.ownerId
+        && request.resource.data.createdAt == resource.data.createdAt;
+      allow delete: if isOwner(businessId);
+
+      match /transactions/{transactionId} {
+        allow read: if isOwner(businessId);
+        allow create: if isOwner(businessId) && validTransaction();
+        allow update: if isOwner(businessId)
+          && validTransaction()
+          && request.resource.data.createdAt == resource.data.createdAt;
+        allow delete: if isOwner(businessId);
+      }
+
+      match /{document=**} {
+        allow read, write: if false;
+      }
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
