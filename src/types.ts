@@ -7,6 +7,10 @@ export type TransactionSource = 'Gemini' | 'Parser' | 'Manual' | 'AI'
 export type Screen = 'dashboard' | 'record' | 'history'
 export type HistoryFilter = 'all' | ConfirmedFlow | 'needs-review'
 export type PeriodFilter = 'week' | 'month' | 'all'
+export type RecordMode = 'assistant' | 'manual'
+
+export const MAX_TRANSACTIONS_PER_INPUT = 8
+export const PRODUCT_TOUR_VERSION = 1
 
 export const BUSINESS_TYPES = [
   'Kuliner',
@@ -65,9 +69,13 @@ export type Transaction = {
   confidence?: number
   model?: string
   schemaVersion?: number
+  /** True selama perubahan masih tersimpan di perangkat dan belum dikonfirmasi server. */
+  pending?: boolean
+  /** Waktu dibuat (ms) untuk mengurutkan transaksi pada tanggal yang sama. */
+  createdAtMs?: number
 }
 
-export type Draft = Omit<Transaction, 'status' | 'flow' | 'fund'> & {
+export type Draft = Omit<Transaction, 'status' | 'flow' | 'fund' | 'pending' | 'createdAtMs'> & {
   flow: Flow
   fund: Fund
   confidence: number
@@ -80,3 +88,9 @@ export type ExtractionResult = {
   model?: string
   fallbackReason?: string
 }
+
+export type FlowTotals = { income: number; expense: number }
+export type FundTotals = Record<ConfirmedFund, FlowTotals>
+
+/** Hasil penulisan: tersinkron ke server, atau tersimpan di perangkat dan menunggu koneksi. */
+export type WriteOutcome = 'synced' | 'queued'

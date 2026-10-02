@@ -1,24 +1,40 @@
 {
   "name": "clearflow-ai",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "ClearFlow.AI — pembukuan arus kas UMKM seperti bercerita, dengan React, Firebase, dan Gemini.",
   "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
   "scripts": {
     "dev": "vite",
+    "dev:emulators": "vite --mode e2e",
+    "emulators": "firebase emulators:start --only auth,firestore --project demo-clearflow",
     "build": "tsc -b && vite build",
+    "preview": "vite preview",
     "lint": "oxlint",
+    "typecheck": "tsc -b",
     "test": "vitest run",
-    "test:e2e": "playwright test",
+    "test:watch": "vitest",
+    "test:rules": "firebase emulators:exec --only firestore --project demo-clearflow \"vitest run --config vitest.rules.config.ts\"",
+    "test:e2e": "firebase emulators:exec --only auth,firestore --project demo-clearflow \"playwright test\"",
+    "test:e2e:live": "playwright test --config playwright.live.config.ts",
     "check": "npm run lint && npm run test && npm run build",
-    "preview": "vite preview"
+    "check:all": "npm run check && npm run test:rules && npm run test:e2e",
+    "deploy": "npm run check && firebase deploy --only firestore,remoteconfig,hosting --project clearfloww"
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
     "firebase": "^12.17.1",
     "lucide-react": "^1.28.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@firebase/rules-unit-testing": "^5.0.2",
     "@playwright/test": "^1.62.1",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.17",
@@ -27,6 +43,10 @@
     "oxlint": "^1.75.0",
     "typescript": "~6.0.2",
     "vite": "^8.2.0",
-    "vitest": "^3.2.4"
+    "vite-plugin-pwa": "^1.3.0",
+    "vitest": "^5.0.3"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "^1.13.6"
   }
 }

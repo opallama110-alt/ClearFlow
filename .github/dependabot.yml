@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      firebase:
+        patterns: ['firebase', '@firebase/*']
+      tooling:
+        patterns: ['vite*', 'vitest', '@vitejs/*', 'typescript', 'oxlint', '@playwright/*', '@axe-core/*']
+    open-pull-requests-limit: 5
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

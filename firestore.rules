@@ -1,5 +1,8 @@
 rules_version = '2';
 
+// Setiap usaha disimpan di businesses/{uid}; hanya pemilik UID yang dapat membaca atau menulis.
+// Skema divalidasi ketat: field tambahan, nilai di luar batas, dan timestamp buatan klien ditolak.
+
 service cloud.firestore {
   match /databases/{database}/documents {
     function signedIn() {
@@ -56,7 +59,8 @@ service cloud.firestore {
         && request.resource.data.plan == 'pilot'
         && request.resource.data.schemaVersion == 2
         && request.resource.data.createdAt is timestamp
-        && request.resource.data.updatedAt is timestamp;
+        // updatedAt wajib berasal dari serverTimestamp(), bukan jam perangkat.
+        && request.resource.data.updatedAt == request.time;
     }
 
     function validTransaction() {
@@ -91,12 +95,14 @@ service cloud.firestore {
           || validShortString(request.resource.data.model, 1, 60))
         && request.resource.data.schemaVersion == 2
         && request.resource.data.createdAt is timestamp
-        && request.resource.data.updatedAt is timestamp;
+        && request.resource.data.updatedAt == request.time;
     }
 
     match /businesses/{businessId} {
       allow read: if isOwner(businessId);
-      allow create: if isOwner(businessId) && validBusiness(businessId);
+      allow create: if isOwner(businessId)
+        && validBusiness(businessId)
+        && request.resource.data.createdAt == request.time;
       allow update: if isOwner(businessId)
         && validBusiness(businessId)
         && request.resource.data.ownerId == resource.data.ownerId
@@ -105,7 +111,9 @@ service cloud.firestore {
 
       match /transactions/{transactionId} {
         allow read: if isOwner(businessId);
-        allow create: if isOwner(businessId) && validTransaction();
+        allow create: if isOwner(businessId)
+          && validTransaction()
+          && request.resource.data.createdAt == request.time;
         allow update: if isOwner(businessId)
           && validTransaction()
           && request.resource.data.createdAt == resource.data.createdAt;
