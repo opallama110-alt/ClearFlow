@@ -6,17 +6,21 @@ import {
   getAuth,
   setPersistence,
 } from 'firebase/auth'
-import {
-  connectFirestoreEmulator,
-  initializeFirestore,
-  persistentLocalCache,
-  persistentMultipleTabManager,
-} from 'firebase/firestore'
 
+const isLocalHost = typeof window !== 'undefined' && ['localhost', '127.0.0.1'].includes(window.location.hostname)
+
+/**
+ * Emulator hanya boleh aktif di localhost, sehingga build yang tidak sengaja memakai
+ * VITE_USE_FIREBASE_EMULATORS=true tetap aman ketika ter-deploy.
+ */
+export const USE_EMULATORS = isLocalHost && import.meta.env.VITE_USE_FIREBASE_EMULATORS === 'true'
+
+// Konfigurasi web Firebase memang bersifat publik; keamanan data dijaga oleh
+// Security Rules, App Check, dan Authentication.
 const firebaseConfig = {
   apiKey: 'AIzaSyBoZ2u4AUL4R_nZENMpl0Rs-xG1RDBcDCo',
   authDomain: 'clearfloww.firebaseapp.com',
-  projectId: 'clearfloww',
+  projectId: USE_EMULATORS ? 'demo-clearflow' : 'clearfloww',
   storageBucket: 'clearfloww.firebasestorage.app',
   messagingSenderId: '399518069291',
   appId: '1:399518069291:web:9862f28b4ef3d294a5f06e',
@@ -26,7 +30,7 @@ const firebaseConfig = {
 export const firebaseApp = initializeApp(firebaseConfig)
 
 const appCheckSiteKey = import.meta.env.VITE_FIREBASE_APPCHECK_SITE_KEY?.trim()
-if (appCheckSiteKey && typeof window !== 'undefined') {
+if (appCheckSiteKey && typeof window !== 'undefined' && !USE_EMULATORS) {
   if (import.meta.env.DEV && import.meta.env.VITE_FIREBASE_APPCHECK_DEBUG === 'true') {
     ;(globalThis as typeof globalThis & { FIREBASE_APPCHECK_DEBUG_TOKEN?: boolean }).FIREBASE_APPCHECK_DEBUG_TOKEN = true
   }
@@ -37,20 +41,17 @@ if (appCheckSiteKey && typeof window !== 'undefined') {
 }
 
 export const auth = getAuth(firebaseApp)
-export const authPersistenceReady = setPersistence(auth, browserLocalPersistence)
+auth.languageCode = 'id'
+export const authPersistenceReady = setPersistence(auth, browserLocalPersistence).catch(() => undefined)
 
-export const db = initializeFirestore(firebaseApp, {
-  localCache: persistentLocalCache({ tabManager: persistentMultipleTabManager() }),
-})
+if (USE_EMULATORS) connectAuthEmulator(auth, 'http://127.0.0.1:9099', { disableWarnings: true })
 
-if (import.meta.env.DEV && import.meta.env.VITE_USE_FIREBASE_EMULATORS === 'true') {
-  connectAuthEmulator(auth, 'http://127.0.0.1:9099', { disableWarnings: true })
-  connectFirestoreEmulator(db, '127.0.0.1', 8080)
-}
+const observabilityEnabled = !USE_EMULATORS && import.meta.env.PROD
 
 let analyticsPromise: Promise<unknown> | undefined
 
 export const initializeObservability = () => {
+  if (!observabilityEnabled) return Promise.resolve()
   analyticsPromise ??= Promise.allSettled([
     import('firebase/analytics').then(async ({ getAnalytics, isSupported }) => {
       if (await isSupported()) return getAnalytics(firebaseApp)
@@ -62,11 +63,19 @@ export const initializeObservability = () => {
 }
 
 export const trackEvent = async (name: string, params?: Record<string, string | number | boolean>) => {
+  if (!observabilityEnabled) return
   try {
     const { getAnalytics, isSupported, logEvent } = await import('firebase/analytics')
     if (!(await isSupported())) return
     logEvent(getAnalytics(firebaseApp), name, params)
   } catch {
-    // Observability must never block the bookkeeping flow.
+    // Observability tidak boleh menghambat alur pembukuan.
   }
+}
+
+/** Melaporkan error tanpa isi transaksi: hanya nama error dan potongan pesan teknis. */
+export const reportError = (error: unknown, context: string, fatal = false) => {
+  const description = error instanceof Error ? `${error.name}: ${error.message}` : String(error)
+  if (import.meta.env.DEV) console.error(`[${context}]`, error)
+  void trackEvent('exception', { description: `${context} | ${description}`.slice(0, 150), fatal })
 }

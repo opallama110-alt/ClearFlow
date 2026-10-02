@@ -1,0 +1,15 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "transactions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "fund", "order": "ASCENDING" },
+        { "fieldPath": "flow", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "amount", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

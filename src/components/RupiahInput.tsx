@@ -1,13 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type InputHTMLAttributes } from 'react'
 import { formatRupiahInput, parseRupiahInput } from '../lib/format'
 
-type Props = {
+type Props = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange' | 'type'> & {
   value: number
   onValueChange: (value: number) => void
-  placeholder?: string
 }
 
-export default function RupiahInput({ value, onValueChange, placeholder = '0 atau 1 jt' }: Props) {
+/**
+ * Input nominal yang menerima "1 jt", "250rb", atau "1.500.000" lalu merapikannya
+ * menjadi format ribuan saat fokus berpindah.
+ */
+export default function RupiahInput({ value, onValueChange, placeholder = '0 atau 1 jt', ...rest }: Props) {
   const [focused, setFocused] = useState(false)
   const [rawValue, setRawValue] = useState(() => formatRupiahInput(value))
 
@@ -17,6 +20,7 @@ export default function RupiahInput({ value, onValueChange, placeholder = '0 ata
 
   return (
     <input
+      {...rest}
       inputMode="text"
       autoComplete="off"
       spellCheck={false}
